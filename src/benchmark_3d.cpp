@@ -1,5 +1,5 @@
 #include <iostream>
-#include "multi_arrays_dim2.h"
+#include "multi_arrays_dim3.h"
 #include <benchmark/benchmark.h>
 
 void b_speedtest_m1(benchmark::State& state){

@@ -16,12 +16,12 @@ arrays are tested.
 #include <vector>
 #include <chrono>
 
-#define loc(l, m) ((50)*(l) + (m))
+#define loc(l, m, n) ((50)*(50)*(l) + (50)*(m) + (n))
 
 using namespace std;
 
-inline int floc(int &l, int &m){
-  return (50*l + m);
+inline int floc(int &l, int &m, int &n){
+  return (50*50*l + 50*m + n);
 }
 
 
@@ -30,8 +30,8 @@ public:
   int dim = 50;
   int nloops;
   int *test;
-  vector<vector<int>> testv;
-  int **testp;
+  vector<vector<vector<int>>> testv;
+  int ***testp;
 
   //methods to create arrays
   //in Constructor

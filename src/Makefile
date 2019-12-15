@@ -13,3 +13,7 @@ BENCHMARK_EXEC = main_benchmark
 benchmark-2d:
 	$(CXX) benchmark_2d.cpp multi_arrays_dim2.cpp $(CFLAGS) -isystem $(BENCHMARK_INCLUDE) -L $(BENCHMARK_LIB_PATH) -lbenchmark -lpthread -o $(BENCHMARK_EXEC)
 	./$(BENCHMARK_EXEC)
+
+benchmark-3d:
+	$(CXX) benchmark_3d.cpp multi_arrays_dim3.cpp $(CFLAGS) -isystem $(BENCHMARK_INCLUDE) -L $(BENCHMARK_LIB_PATH) -lbenchmark -lpthread -o $(BENCHMARK_EXEC)
+	./$(BENCHMARK_EXEC)
